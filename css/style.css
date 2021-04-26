@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Original Surfer', cursive;
+}
+
+.bubble {
+    height: 43px;
+    line-height: 43px;
+    display: inline-block;
+	position: relative;
+    padding: 5px;
+    text-decoration: underline;
+	background: #eeff00;
+	border-radius: .4em;
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-right-color: #eeff00;
+	border-left: 0;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+#passwd {
+    display: inline-block;
+    opacity: 0;
+    margin-right: 20px;
+}
+#passwd:hover {
+    opacity: 1;
+    transition: 1s;
+}
